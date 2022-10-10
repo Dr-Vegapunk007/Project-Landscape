@@ -1,0 +1,99 @@
+body {
+  overflow-x: hidden;
+}
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 120px;
+  padding-top: 15px;
+  gap: 310px;
+  align-items: center;
+}
+
+.logo {
+  font: normal normal bold 35px arial;
+  color: rgb(19, 5, 95);
+}
+.header-button {
+  border-radius: 25px;
+  font: normal normal bold 17px arial;
+  color: white;
+  background-color: rgb(11, 2, 63);
+  border-style: none;
+  padding: 15px 30px 15px 30px;
+}
+
+.main {
+  display: inline-block;
+  width: 450px;
+  padding-left: 120px;
+  padding-top: 80px;
+}
+h1 {
+  font: normal normal 700 60px Inter Tight;
+  color: rgb(11, 2, 63);
+  margin-bottom: 35px;
+}
+.info {
+  color: rgb(153, 153, 153);
+  font: normal normal 400 19px Inter Tight;
+  line-height: 25px;
+  width: 410px;
+  margin-bottom: 30.15px;
+}
+.main-button {
+  border-style: none;
+  padding: 17px 30px 17px 30px;
+  font: normal normal 400 18px Inter Tight;
+  color: white;
+  border-radius: 30px;
+  background: linear-gradient(-10deg, #f109b7 -20%, #ff7c01 130%);
+}
+.picture {
+  position: relative;
+}
+.desktop-profile {
+  float: right;
+  width: 550px;
+}
+.contain-pic-button {
+  position: relative;
+  justify-self: center;
+}
+.profile {
+  position: absolute;
+  right: -158px;
+  top: -23px;
+}
+.members-contain {
+  position: absolute;
+  background-color: white;
+  padding: 18px 40px 18px 20px;
+  text-align: left;
+  border-radius: 10px;
+  right: -50px;
+  top: 215px;
+  border: solid 1px rgb(223, 222, 222);
+}
+div .members,
+.course-hours {
+  margin: 0 0 8px 0;
+  color: rgb(153, 153, 153);
+  font: normal normal 500 15px Inter Tight;
+}
+div .members-num,
+.hours {
+  font: normal normal 700 28px arial;
+  color: rgb(11, 2, 63);
+  margin: 0;
+}
+.course {
+  position: absolute;
+  background-color: white;
+  padding: 18px 40px 18px 20px;
+  text-align: left;
+  border-radius: 10px;
+  top: 415px;
+  left: -225px;
+  border: solid 1px rgb(223, 222, 222);
+}
