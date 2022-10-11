@@ -28,14 +28,13 @@ body {
   border-style: none;
   padding: 15px 30px 15px 30px;
 }
-.profile {
-  position: absolute;
-  right: -139.4px;
-  top: -23px;
-}
+
 .desktop-profile {
   float: right;
   width: 550px;
+  position: absolute;
+  right: -139.4px;
+  top: -23px;
 }
 @media all and (max-width: 1077px) {
   .desktop-profile {
