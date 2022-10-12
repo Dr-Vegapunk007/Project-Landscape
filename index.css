@@ -1,323 +1,185 @@
 body {
-  overflow-x: hidden;
   background: linear-gradient(to bottom, #ffffff 0%, #cccac88c 100%);
 }
 .header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding-left: 180px;
-  padding-top: 15px;
-  gap: 310px;
-  align-items: center;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
 }
-
 .logo {
-  font: normal normal bold 35px arial;
+  font: normal normal bold 25px arial;
   color: rgb(19, 5, 95);
+  padding-left: 15px;
+  cursor: pointer;
 }
-
-.contain-pic-button {
-  position: relative;
-  justify-self: center;
+.contain-button {
+  display: flex;
+  flex-shrink: 0;
+  padding-right: 15px;
 }
-.header-button {
+.header button {
   border-radius: 25px;
-  font: normal normal bold 17px arial;
+  font: normal normal bold 12px arial;
   color: white;
   background-color: rgb(11, 2, 63);
   border-style: none;
-  padding: 15px 30px 15px 30px;
-}
-
-.desktop-profile {
-  float: right;
-  width: 550px;
-  position: absolute;
-  right: -139.4px;
-  top: -23px;
-}
-@media all and (max-width: 1077px) {
-  .desktop-profile {
-    width: 450px;
-  }
-  .header {
-    padding-left: 80px;
-  }
-}
-@media all and (max-width: 798px) {
-  .header {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-  .desktop-profile {
-    display: none;
-  }
-  .profile {
-    right: 140%;
-    top: 530px;
-  }
-}
-.members-contain {
-  position: absolute;
-  background-color: white;
-  padding: 18px 40px 18px 20px;
-  text-align: left;
-  border-radius: 10px;
-  right: -50px;
-  top: 215px;
-  border: solid 1px rgb(223, 222, 222);
-}
-.course {
-  position: absolute;
-  background-color: white;
-  padding: 18px 40px 18px 20px;
-  text-align: left;
-  border-radius: 10px;
-  top: 415px;
-  left: -225px;
-  border: solid 1px rgb(223, 222, 222);
-}
-div .members,
-.course-hours {
-  margin: 0 0 8px 0;
-  color: rgb(153, 153, 153);
-  font: normal normal 500 15px Inter Tight;
-}
-div .members-num,
-.hours {
-  font: normal normal 700 28px arial;
-  color: rgb(11, 2, 63);
-  margin: 0;
-}
-.members-contain-p {
-  display: none;
-  position: absolute;
-  background-color: white;
-  padding: 12px 20px 12px 20px;
-  text-align: left;
-  border-radius: 10px;
-  right: 29%;
-  top: 55px;
-  border: solid 1px rgb(223, 222, 222);
-}
-.course-p {
-  display: none;
-  position: absolute;
-  background-color: white;
-  padding: 12px 20px 12px 20px;
-  text-align: left;
-  border-radius: 10px;
-  top: 60%;
-  left: 200px;
-  border: solid 1px rgb(223, 222, 222);
-}
-div .members-p,
-.course-hours-p {
-  margin: 0 0 8px 0;
-  color: rgb(153, 153, 153);
-  font: normal normal 500 15px Inter Tight;
-}
-div .members-num-p,
-.hours-p {
-  font: normal normal 700 28px arial;
-  color: rgb(11, 2, 63);
-  margin: 0;
+  padding: 10px 20px 10px 20px;
+  cursor: pointer;
 }
 .main {
-  display: inline-block;
-  width: 450px;
-  padding-left: 180px;
-  padding-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr;
+  /* margin-top: 20px;*/
+  justify-content: center;
+  justify-items: center;
+  gap: 15px;
+  margin-bottom: 60px;
 }
-
+.main-info {
+  padding: 25px;
+}
 h1 {
-  font: normal normal 700 60px Inter Tight;
+  font: normal normal 700 30px Inter Tight;
   color: rgb(11, 2, 63);
   margin-bottom: 35px;
+  margin-bottom: 20px;
 }
-.info {
+.caption {
   color: rgb(153, 153, 153);
-  font: normal normal 400 19px Inter Tight;
-  line-height: 25px;
-  width: 410px;
-  margin-bottom: 30.15px;
+  font: normal normal 400 15px Inter Tight;
+  line-height: 20px;
+  margin-bottom: 20px;
 }
-.main-button {
+.main button {
   border-style: none;
-  padding: 17px 30px 17px 30px;
-  font: normal normal 400 18px Inter Tight;
+  padding: 13px 30px 13px 30px;
+  font: normal normal 500 12px Inter Tight;
   color: white;
   border-radius: 30px;
   background: linear-gradient(-10deg, #f109b7 -20%, #ff7c01 130%);
+  cursor: pointer;
 }
-.phone-profile {
-  display: none;
+.profile {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  background: linear-gradient(-10deg, #f109b7 -20%, #ff7c01 130%);
+  border-radius: 100px;
 }
-@media all and (max-width: 1077px) {
-  .members-contain {
-    padding: 20px 15px 15px 20px;
-    right: 0px;
-    top: 100px;
-  }
-  .course {
-    padding: 12px 30px 12px 20px;
-    top: 445px;
-    left: -160px;
-  }
-  .main {
-    padding-left: 80px;
-  }
+.profile svg {
+  width: 180px;
+  border-radius: 120px;
 }
-@media all and (max-width: 798px) {
-  .main {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    align-items: center;
-    text-align: center;
-    padding: 80px 15px 0px 15px;
-    margin-bottom: 0px;
-  }
-  .info {
-    width: auto;
-  }
-  .members-contain {
-    display: none;
-  }
-  .course {
-    display: none;
-  }
-  .phone-profile {
-    display: flex;
-    margin-top: 80px;
-  }
-  .phone-logo {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .members-contain-p {
-    display: initial;
-  }
-  .course-p {
-    display: initial;
-  }
+.contain-members,
+.contain-course-hours {
+  position: absolute;
+  background-color: white;
+  border-radius: 10px;
+  border: solid 1px rgb(223, 222, 222);
+  text-align: center;
+  padding: 9px;
+}
+.contain-members {
+  top: -12px;
+  right: -35px;
+}
+.contain-course-hours {
+  bottom: -20px;
+  left: -25px;
+}
+.members,
+.course-hours {
+  margin-bottom: 3px;
+  color: rgb(117, 116, 116);
+  font: normal normal 500 15px Inter Tight;
+}
+.members-num,
+.hours {
+  font: normal normal 700 22px arial;
+  color: rgb(11, 2, 63);
+  margin: 0;
 }
 .courses-contain {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 180px;
-  padding-bottom: 130px;
-  width: auto;
-  margin-top: 50px;
-  grid-column-gap: 25px;
-  grid-row-gap: 50px;
+  grid-template-columns: 1fr;
+  padding: 0 25px 0 25px;
+  gap: 35px;
+  margin-bottom: 70px;
 }
 .courses-contain div {
   position: relative;
   box-shadow: 10px 1px 50px rgba(182, 182, 182, 0.534);
   border-radius: 17px;
   background-color: white;
+  padding: 30px 0px 25px 25px;
 }
 .checkout {
   background: linear-gradient(-5deg, #f01fbc -15%, #ff7c01 115%);
 }
 .checkout-info {
   color: white;
-  font: normal normal 600 25px Inter Tight;
-  padding: 60px 0px 0px 30px;
-  word-spacing: 2px;
+  font: normal normal 500 17px Inter Tight;
   letter-spacing: 2px;
-  width: 245px;
+  padding-right: 25px;
 }
 .title {
   font: normal normal 700 22px arial;
   color: rgb(11, 2, 63);
-  padding: 40px 0px 0px 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .inf {
   color: rgb(153, 153, 153);
-  font: normal normal 500 17px Inter Tight;
-  padding: 0px 0px 10px 30px;
-  width: 245px;
+  font: normal normal 400 18px Inter Tight;
+  margin-bottom: 20px;
 }
-.three-lines {
-  padding-bottom: 30px;
-}
-
-.course-submit {
-  margin: 15px 0px 25px 30px;
+.courses-contain button {
   background-color: white;
   border-style: none;
   font: normal normal 700 15px arial;
   color: #db23ad;
+  cursor: pointer;
 }
-
 .courses-contain div .icon-contain {
+  display: flex;
+  justify-content: center;
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border-radius: 25px;
   background: linear-gradient(-5deg, #f01fbc -15%, #ff7c01 115%);
-  top: -23px;
-  left: 28px;
-  text-align: center;
+  padding: 0px 0px 0px 0px;
+  top: -20px;
+  align-items: center;
 }
 svg {
   width: 25px;
-  margin-top: 10px;
-}
-@media all and (max-width: 1077px) {
-  .courses-contain {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 80px;
-    padding-bottom: 130px;
-    justify-content: center;
-    margin-top: 50px;
-  }
-}
-@media all and (max-width: 798px) {
-  .courses-contain {
-    grid-template-columns: 1fr;
-    grid-auto-columns: auto;
-    padding: 0px 15px 80px 15px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0px;
-    justify-items: center;
-  }
-  .checkout-info {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-  .inf {
-    padding-left: 15px;
-  }
 }
 footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 100px 20px 100px;
   background-color: rgb(11, 2, 63);
+  padding: 10px 15px 10px 15px;
 }
 .logo-foot {
-  font: normal normal bold 35px arial;
+  font: normal normal 500 25px Pragati Narrow;
   color: rgb(255, 255, 255);
+  letter-spacing: 1px;
+  cursor: pointer;
 }
-.button-foot {
+footer button {
   background: linear-gradient(
     to top,
     rgb(253, 16, 174) -10%,
     rgb(131, 62, 241) 100%
   );
-  border-style: none;
+  border-radius: 25px;
+  font: normal normal 500 15px Pragati Narrow;
   color: white;
-  font: normal normal bold 17px arial;
-  padding: 15px 30px 15px 30px;
-  border-radius: 30px;
+  border-style: none;
+  padding: 5px 20px 5px 20px;
+  letter-spacing: 1px;
+  cursor: pointer;
 }
