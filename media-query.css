@@ -1,0 +1,74 @@
+@media all and (min-width: 550px) {
+  .courses-contain {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .checkout-info {
+    font: normal normal 500 22px Inter Tight;
+  }
+}
+@media all and (min-width: 601px) and (max-width: 1000px) {
+  .main {
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    align-items: center;
+    justify-items: center;
+  }
+  h1 {
+    font: normal normal 700 36px Inter Tight;
+  }
+  .caption {
+    font: normal normal 400 17px Inter Tight;
+  }
+  .main button {
+    font: normal normal 500 16px Inter Tight;
+  }
+  .profile {
+    width: 190px;
+    height: 300px;
+    background: none;
+  }
+  .profile svg {
+    width: 190px;
+    height: 302px;
+    margin-top: -1px;
+    background: linear-gradient(-10deg, #f109b7 -20%, #ff7c01 130%);
+  }
+}
+@media all and (min-width: 1001px) {
+  .main {
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    align-items: center;
+    justify-items: center;
+  }
+  h1 {
+    font: normal normal 700 36px Inter Tight;
+  }
+  .caption {
+    font: normal normal 400 17px Inter Tight;
+  }
+  .main button {
+    font: normal normal 500 16px Inter Tight;
+  }
+  .profile {
+    width: 190px;
+    height: 300px;
+    background: none;
+  }
+  .profile svg {
+    width: 190px;
+    height: 302px;
+    margin-top: -1px;
+    background: linear-gradient(-10deg, #f109b7 -20%, #ff7c01 130%);
+  }
+  .courses-contain {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .checkout-info {
+    font: normal normal 500 25px Inter Tight;
+  }
+}

@@ -66,7 +66,7 @@ h1 {
   background: linear-gradient(-10deg, #f109b7 -20%, #ff7c01 130%);
   border-radius: 100px;
 }
-.profile svg {
+.phone-layout {
   width: 180px;
   border-radius: 120px;
 }
@@ -115,7 +115,9 @@ h1 {
   padding: 30px 0px 25px 25px;
 }
 .checkout {
+  display: flex;
   background: linear-gradient(-5deg, #f01fbc -15%, #ff7c01 115%);
+  align-items: center;
 }
 .checkout-info {
   color: white;
